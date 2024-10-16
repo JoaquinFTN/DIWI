@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 1260px;
+}
+body{
+    width: 100%;
+    height: 500px;
+    margin-top: 45px;
+    background-color: yellow;
+    font-size: 15px;
+}
+main{
+    background-color: aqua;
+    display: flow-root; /*con el display: flow-root; elcontenedor se adapta al tamaño del contenido*/
+}
+main > div{
+    height: 400px;
+}
+/*Elementos del layout*/
+
+/*Estilos del lado izquierdo*/
+#izquierda{
+    width: 780px; /*800px-20px de padding (10left + 10right)*/
+    padding: 30px 10px;
+    float: left;
+    margin: 0px 10px 0px 20px;
+    background-color: blanchedalmond;
+}
+#izquierda > form{
+    margin-top: 4em;
+    padding: 1em 0px 1em 70px;
+    border: 2px solid black;
+}
+#izquierda > form > input[type="text"]{
+    width: 490px; /*500-10 (10 del padding-left)*/
+    padding-left: 10px;
+    height: 1.8em;
+    margin: 1em 0;
+    display: block;
+}
+#centrar{
+    text-align: center;
+}
+#centrar > input[type="submit"]{
+    width: 150px;
+    height: 2em;
+    background-color: #D8D8D8;
+}
+/*Estilos del lado derecho*/
+#derecha{
+    width: 370px; /*400px-30px del paddind (30left)*/
+    float: left; 
+    margin: 0px 20px 0px 10px;
+    background-color: red;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+#primero, #segundo, #tercero{
+    position: absolute;
+    top: 100px;
+}
+#primero{
+    right: 900px;
+    background-color: #D8D8D8;
+    width: 100px;
+    height: 100px;
+}
+#primero > img, #segundo > img{
+    width: 100px;
+}
+#segundo{
+    right: 700px;
+    background-color: #D8D8D8;
+    width: 100px;
+    height: 100px;
+}
+#tercero{
+    top: 250px;
+    right: 660px;
+}
+
+/*Estilos del footer*/
+footer{
+    width: 1260px;
+    height: 100px;
+    background-color: blueviolet;
+    /*clear: both; limpia todos los float*/
+    clear: left;/*usamos el left para limpiar el float de las cajas anteriores*/
+}

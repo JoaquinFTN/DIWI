@@ -1,0 +1,30 @@
+body{
+    width: 1260px;
+    height: 400px;
+    margin-top: 45px;
+    background-color: aqua;
+}
+body > div{
+    height: 400px;
+}
+body div:first-child{
+    width: 780px; /*800px-20px de padding (10left + 10right)*/
+    padding: 0px 10px;
+    float: left;
+    margin: 0px 10px 0px 20px;
+    background-color: blanchedalmond;
+}
+
+body div:nth-child(2){
+    width: 340px; /*400px-60px del paddind (30left + 30 right)*/
+    float: left; 
+    margin: 0px 20px 0px 10px;
+    background-color: red;
+    padding: 0px 30px;
+}
+footer{
+    width: 1260px;
+    height: 100px;
+    background-color: blueviolet;
+    clear: both;
+}
